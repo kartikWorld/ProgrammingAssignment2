@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## Function that creates a special matrix
+##and cache's the inverse using the <<- operator
 makeCacheMatrix <- function(x = matrix()) {
   invMatrix <- NULL
   
@@ -24,7 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+##Checks if an inverse has already been calculated
++##If not it sets the inverse of the matrix
++##If yes, it prints a message and retrieves the cached inverse matrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         invMatrix <- x$getInvmatirx()
